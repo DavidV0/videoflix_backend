@@ -27,8 +27,11 @@ SECRET_KEY = 'django-insecure-**!qn@z8*u0^9=$*dm-@t(b_m!%vzpmuu+8!6ut4=ri1jsw8hu
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CSRF_TRUSTED_ORIGINS = [
+    'https://videoflix-f4566d96a590.herokuapp.com',
+]
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['videoflix-f4566d96a590.herokuapp.com', 'localhost', '127.0.0.1']
 
 CACHE_TTL = 60 * 15 
 
