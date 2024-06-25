@@ -27,11 +27,9 @@ SECRET_KEY = 'django-insecure-**!qn@z8*u0^9=$*dm-@t(b_m!%vzpmuu+8!6ut4=ri1jsw8hu
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-CSRF_TRUSTED_ORIGINS = [
-    'https://videoflix-f4566d96a590.herokuapp.com',
-]
 
-ALLOWED_HOSTS = ['videoflix-f4566d96a590.herokuapp.com', 'localhost', '127.0.0.1']
+
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1']
 
 CACHE_TTL = 60 * 15 
 
@@ -91,7 +89,6 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
-	'http://35.246.157.129',
 	'http://localhost:4200',  # Add your frontend URL here
 ]
 
@@ -118,24 +115,11 @@ WSGI_APPLICATION = 'videoflix.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-#DATABASES = {
-#   'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
 DATABASES = {
-    'default':{
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dn1ibt804ak7v',
-        'HOST': 'c7u1tn6bvvsodf.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com',
-        'PORT': '5432',
-        'USER': 'uf8e0kakghssc0',
-        'PASSWORD': 'p7f170d9e3aaf9d4f7bb9d914ea5eaf42346215a384ccd5ab2e202e1d12c5a518',
-        
-        
-    } 
+   'default': {     
+       'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 # Password validation
@@ -211,19 +195,5 @@ RQ_QUEUES = {
         'DB': 0,
         'PASSWORD': 'foobared',
         'DEFAULT_TIMEOUT': 360,
-    },
-}
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'root': {
-        'handlers': ['console'],
-        'level': 'DEBUG',
     },
 }
