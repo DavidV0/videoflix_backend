@@ -1,9 +1,10 @@
 asgiref==3.8.1
 async-timeout==4.0.3
+backports.zoneinfo==0.2.1
 click==8.1.7
 colorama==0.4.6
 diff-match-patch==20230430
-Django==5.0.6
+Django==4.2.13
 django-cors-headers==4.3.1
 django-debug-toolbar==4.4.2
 django-import-export==4.0.8
@@ -15,12 +16,12 @@ djangorestframework-simplejwt==5.3.1
 gunicorn==22.0.0
 packaging==24.1
 pillow==10.3.0
+psycopg2-binary==2.9.9
 PyJWT==2.8.0
 python-dotenv==1.0.1
 redis==5.0.5
 rq==1.16.2
 sqlparse==0.5.0
 tablib==3.5.0
-typing_extensions==4.12.2
+typing-extensions==4.12.2
 tzdata==2024.1
-psycopg2-binary>=2.8
