@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-**!qn@z8*u0^9=$*dm-@t(b_m!%vzpmuu+8!6ut4=ri1jsw8hu
 DEBUG = True
 
 
-ALLOWED_HOSTS =  [ 'videoflix-david.netlify.app' , 'localhost', '127.0.0.1','34.141.117.158']
+ALLOWED_HOSTS =  ['videoflix-api.david-velickovic.at', 'videoflix.david-velickovic.at' , 'localhost', '127.0.0.1','34.141.117.158']
 
 CACHE_TTL = 60 * 15 
 
